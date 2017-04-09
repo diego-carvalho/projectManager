@@ -1,0 +1,1284 @@
+2017-04-08 19:45:09 Error: [Cake\View\Exception\MissingTemplateException] Template file "Pages/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/index.ctp',
+)
+Request URL: /
+Referer URL: http://localhost/cakePHP/
+Stack Trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/View/View.php(592): Cake\View\View->_getViewFileName('Pages/index')
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Controller/Controller.php(623): Cake\View\View->render('index', NULL)
+#2 /home/diego/projects/public/cakePHP/projectmanager/src/Controller/PagesController.php(61): Cake\Controller\Controller->render('index')
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\PagesController->display('index')
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#5 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#6 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home/diego/projects/public/cakePHP/projectmanager/webroot/index.php(37): Cake\Http\Server->run()
+#17 {main}
+
+
+2017-04-08 19:48:51 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Home could not be found.
+Exception Attributes: array (
+  'class' => 'Home',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /
+Referer URL: http://localhost/cakePHP/
+Stack Trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/diego/projects/public/cakePHP/projectmanager/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-04-08 19:50:19 Error: [Cake\Controller\Exception\MissingActionException] Action HomesController::display() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'HomesController',
+  'action' => 'display',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /
+Referer URL: http://localhost/cakePHP/
+Stack Trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\HomesController))
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/diego/projects/public/cakePHP/projectmanager/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-04-08 19:50:50 Error: [Cake\View\Exception\MissingTemplateException] Template file "Homes/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Homes/index.ctp',
+)
+Request URL: /
+Referer URL: http://localhost/cakePHP/
+Stack Trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/View/View.php(592): Cake\View\View->_getViewFileName('Homes/index')
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Controller/Controller.php(623): Cake\View\View->render(NULL, NULL)
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\HomesController))
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/diego/projects/public/cakePHP/projectmanager/webroot/index.php(37): Cake\Http\Server->run()
+#15 {main}
+
+
+2017-04-08 19:53:09 Error: [Cake\View\Exception\MissingTemplateException] Template file "Homes/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Homes/index.ctp',
+)
+Request URL: /
+Referer URL: http://localhost/cakePHP/
+Stack Trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/View/View.php(592): Cake\View\View->_getViewFileName('Homes/index')
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Controller/Controller.php(623): Cake\View\View->render(NULL, NULL)
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\HomesController))
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/diego/projects/public/cakePHP/projectmanager/webroot/index.php(37): Cake\Http\Server->run()
+#15 {main}
+
+
+2017-04-08 19:54:38 Error: [Cake\View\Exception\MissingTemplateException] Template file "Home/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Home/index.ctp',
+)
+Request URL: /
+Referer URL: http://localhost/cakePHP/
+Stack Trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/View/View.php(592): Cake\View\View->_getViewFileName('Home/index')
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Controller/Controller.php(623): Cake\View\View->render(NULL, NULL)
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\HomeController))
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/diego/projects/public/cakePHP/projectmanager/webroot/index.php(37): Cake\Http\Server->run()
+#15 {main}
+
+
+2017-04-08 19:55:41 Error: [Cake\View\Exception\MissingTemplateException] Template file "Home/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Home/index.ctp',
+)
+Request URL: /
+Referer URL: http://localhost/cakePHP/
+Stack Trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/View/View.php(592): Cake\View\View->_getViewFileName('Home/index')
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Controller/Controller.php(623): Cake\View\View->render(NULL, NULL)
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\HomeController))
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/diego/projects/public/cakePHP/projectmanager/webroot/index.php(37): Cake\Http\Server->run()
+#15 {main}
+
+
+2017-04-08 20:27:16 Error: [Cake\View\Exception\MissingElementException] Element file "Element/navbar/navbarMain.ctp" is missing.
+Exception Attributes: array (
+  0 => 'Element/navbar/navbarMain.ctp',
+)
+Request URL: /
+Referer URL: http://localhost/cakePHP/
+Stack Trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/src/Template/Home/index.ctp(2): Cake\View\View->element('navbar/navbarMa...')
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/View/View.php(1011): include('/home/diego/pro...')
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/View/View.php(972): Cake\View\View->_evaluate('/home/diego/pro...', Array)
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/View/View.php(596): Cake\View\View->_render('/home/diego/pro...')
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Controller/Controller.php(623): Cake\View\View->render(NULL, NULL)
+#5 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#6 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\HomeController))
+#7 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/diego/projects/public/cakePHP/projectmanager/webroot/index.php(37): Cake\Http\Server->run()
+#18 {main}
+
+
+2017-04-08 21:02:10 Error: [Cake\View\Exception\MissingLayoutException] Layout file "Layout/adminlte.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Layout/adminlte.ctp',
+)
+Request URL: /
+Stack Trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/View/View.php(625): Cake\View\View->_getLayoutFileName('adminlte')
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/View/View.php(601): Cake\View\View->renderLayout('', 'adminlte')
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Controller/Controller.php(623): Cake\View\View->render(NULL, NULL)
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\HomeController))
+#5 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/diego/projects/public/cakePHP/projectmanager/webroot/index.php(37): Cake\Http\Server->run()
+#16 {main}
+
+
+2017-04-08 21:45:59 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::login() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+  'prefix' => 'admin',
+  'plugin' => false,
+)
+Request URL: /admin/users/login
+Referer URL: http://localhost/cakePHP/projectmanager/
+Stack Trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Admin\UsersController))
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/diego/projects/public/cakePHP/projectmanager/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-04-08 21:58:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Users could not be found.
+Exception Attributes: array (
+  'class' => 'Users',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /users/login
+Referer URL: http://localhost/cakePHP/
+Stack Trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/diego/projects/public/cakePHP/projectmanager/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-04-08 22:08:06 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Users could not be found.
+Exception Attributes: array (
+  'class' => 'Users',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /users/login
+Referer URL: http://localhost/cakePHP/
+Stack Trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/diego/projects/public/cakePHP/projectmanager/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-04-08 22:08:13 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Users could not be found.
+Exception Attributes: array (
+  'class' => 'Users',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/diego/projects/public/cakePHP/projectmanager/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-04-08 22:08:17 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Users could not be found.
+Exception Attributes: array (
+  'class' => 'Users',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/diego/projects/public/cakePHP/projectmanager/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-04-08 22:08:26 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Users could not be found.
+Exception Attributes: array (
+  'class' => 'Users',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /users/login
+Referer URL: http://localhost/cakePHP/
+Stack Trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/diego/projects/public/cakePHP/projectmanager/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-04-08 22:10:16 Error: Fatal Error (1): Uncaught Error: Call to a member function allow() on boolean in /home/diego/projects/public/cakePHP/projectmanager/src/Controller/AppController.php:87
+Stack trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/src/Controller/ErrorController.php(54): App\Controller\AppController->beforeRender(Object(Cake\Event\Event))
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventManager.php(414): App\Controller\ErrorController->beforeRender(Object(Cake\Event\Event))
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventManager.php(391): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Controller/Controller.php(610): Cake\Controller\Controller->dispatchEvent('C in [/home/diego/projects/public/cakePHP/projectmanager/src/Controller/AppController.php, line 87]
+Request URL: /users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 104
+[main] - [internal], line ??
+
+
+
+2017-04-08 22:10:27 Error: Fatal Error (1): Uncaught Error: Call to a member function allow() on boolean in /home/diego/projects/public/cakePHP/projectmanager/src/Controller/AppController.php:87
+Stack trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/src/Controller/ErrorController.php(54): App\Controller\AppController->beforeRender(Object(Cake\Event\Event))
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventManager.php(414): App\Controller\ErrorController->beforeRender(Object(Cake\Event\Event))
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventManager.php(391): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Controller/Controller.php(610): Cake\Controller\Controller->dispatchEvent('C in [/home/diego/projects/public/cakePHP/projectmanager/src/Controller/AppController.php, line 87]
+Request URL: /users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 104
+[main] - [internal], line ??
+
+
+
+2017-04-08 22:11:21 Error: Fatal Error (1): Uncaught Error: Call to a member function allow() on boolean in /home/diego/projects/public/cakePHP/projectmanager/src/Controller/AppController.php:85
+Stack trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/src/Controller/ErrorController.php(54): App\Controller\AppController->beforeRender(Object(Cake\Event\Event))
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventManager.php(414): App\Controller\ErrorController->beforeRender(Object(Cake\Event\Event))
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventManager.php(391): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Controller/Controller.php(610): Cake\Controller\Controller->dispatchEvent('C in [/home/diego/projects/public/cakePHP/projectmanager/src/Controller/AppController.php, line 85]
+Request URL: /users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 104
+[main] - [internal], line ??
+
+
+
+2017-04-08 22:11:26 Error: Fatal Error (1): Uncaught Error: Call to a member function allow() on boolean in /home/diego/projects/public/cakePHP/projectmanager/src/Controller/AppController.php:85
+Stack trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/src/Controller/ErrorController.php(54): App\Controller\AppController->beforeRender(Object(Cake\Event\Event))
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventManager.php(414): App\Controller\ErrorController->beforeRender(Object(Cake\Event\Event))
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventManager.php(391): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Controller/Controller.php(610): Cake\Controller\Controller->dispatchEvent('C in [/home/diego/projects/public/cakePHP/projectmanager/src/Controller/AppController.php, line 85]
+Request URL: /users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 104
+[main] - [internal], line ??
+
+
+
+2017-04-08 22:13:48 Error: Fatal Error (1): Uncaught Error: Call to a member function allow() on boolean in /home/diego/projects/public/cakePHP/projectmanager/src/Controller/AppController.php:85
+Stack trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/src/Controller/ErrorController.php(54): App\Controller\AppController->beforeRender(Object(Cake\Event\Event))
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventManager.php(414): App\Controller\ErrorController->beforeRender(Object(Cake\Event\Event))
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventManager.php(391): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Controller/Controller.php(610): Cake\Controller\Controller->dispatchEvent('C in [/home/diego/projects/public/cakePHP/projectmanager/src/Controller/AppController.php, line 85]
+Request URL: /users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 104
+[main] - [internal], line ??
+
+
+
+2017-04-08 22:13:50 Error: Fatal Error (1): Uncaught Error: Call to a member function allow() on boolean in /home/diego/projects/public/cakePHP/projectmanager/src/Controller/AppController.php:85
+Stack trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/src/Controller/ErrorController.php(54): App\Controller\AppController->beforeRender(Object(Cake\Event\Event))
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventManager.php(414): App\Controller\ErrorController->beforeRender(Object(Cake\Event\Event))
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventManager.php(391): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Controller/Controller.php(610): Cake\Controller\Controller->dispatchEvent('C in [/home/diego/projects/public/cakePHP/projectmanager/src/Controller/AppController.php, line 85]
+Request URL: /users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 104
+[main] - [internal], line ??
+
+
+
+2017-04-08 22:13:54 Error: Fatal Error (1): Uncaught Error: Call to a member function allow() on boolean in /home/diego/projects/public/cakePHP/projectmanager/src/Controller/AppController.php:85
+Stack trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/src/Controller/ErrorController.php(54): App\Controller\AppController->beforeRender(Object(Cake\Event\Event))
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventManager.php(414): App\Controller\ErrorController->beforeRender(Object(Cake\Event\Event))
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventManager.php(391): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Controller/Controller.php(610): Cake\Controller\Controller->dispatchEvent('C in [/home/diego/projects/public/cakePHP/projectmanager/src/Controller/AppController.php, line 85]
+Request URL: /users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 104
+[main] - [internal], line ??
+
+
+
+2017-04-08 22:14:42 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Users could not be found.
+Exception Attributes: array (
+  'class' => 'Users',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/diego/projects/public/cakePHP/projectmanager/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-04-08 22:14:46 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Users could not be found.
+Exception Attributes: array (
+  'class' => 'Users',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/diego/projects/public/cakePHP/projectmanager/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-04-08 22:15:26 Error: Fatal Error (1): Uncaught Error: Call to a member function allow() on boolean in /home/diego/projects/public/cakePHP/projectmanager/src/Controller/AppController.php:87
+Stack trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/src/Controller/ErrorController.php(54): App\Controller\AppController->beforeRender(Object(Cake\Event\Event))
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventManager.php(414): App\Controller\ErrorController->beforeRender(Object(Cake\Event\Event))
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventManager.php(391): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Controller/Controller.php(610): Cake\Controller\Controller->dispatchEvent('C in [/home/diego/projects/public/cakePHP/projectmanager/src/Controller/AppController.php, line 87]
+Request URL: /users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 104
+[main] - [internal], line ??
+
+
+
+2017-04-08 22:15:44 Error: Fatal Error (1): Uncaught Error: Call to a member function allow() on boolean in /home/diego/projects/public/cakePHP/projectmanager/src/Controller/AppController.php:87
+Stack trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/src/Controller/ErrorController.php(54): App\Controller\AppController->beforeRender(Object(Cake\Event\Event))
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventManager.php(414): App\Controller\ErrorController->beforeRender(Object(Cake\Event\Event))
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventManager.php(391): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Controller/Controller.php(610): Cake\Controller\Controller->dispatchEvent('C in [/home/diego/projects/public/cakePHP/projectmanager/src/Controller/AppController.php, line 87]
+Request URL: /users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 104
+[main] - [internal], line ??
+
+
+
+2017-04-08 22:15:46 Error: Fatal Error (1): Uncaught Error: Call to a member function allow() on boolean in /home/diego/projects/public/cakePHP/projectmanager/src/Controller/AppController.php:87
+Stack trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/src/Controller/ErrorController.php(54): App\Controller\AppController->beforeRender(Object(Cake\Event\Event))
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventManager.php(414): App\Controller\ErrorController->beforeRender(Object(Cake\Event\Event))
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventManager.php(391): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Controller/Controller.php(610): Cake\Controller\Controller->dispatchEvent('C in [/home/diego/projects/public/cakePHP/projectmanager/src/Controller/AppController.php, line 87]
+Request URL: /users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 104
+[main] - [internal], line ??
+
+
+
+2017-04-08 22:15:50 Warning: Warning (2): Declaration of App\Controller\Admin\UsersController::beforeFilter(App\Controller\Admin\Event $event) should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [/home/diego/projects/public/cakePHP/projectmanager/src/Controller/Admin/UsersController.php, line 11]
+Request URL: /admin/users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+include - APP/Controller/Admin/UsersController.php, line 11
+Composer\Autoload\includeFile - ROOT/vendor/composer/ClassLoader.php, line 412
+Composer\Autoload\ClassLoader::loadClass() - ROOT/vendor/composer/ClassLoader.php, line 301
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+Cake\Core\App::_classExistsInBase() - CORE/src/Core/App.php, line 152
+Cake\Core\App::className() - CORE/src/Core/App.php, line 64
+Cake\Http\ControllerFactory::create() - CORE/src/Http/ControllerFactory.php, line 68
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 90
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 78
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 59
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 92
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 80
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-04-08 22:15:51 Error: [TypeError] Argument 1 passed to App\Controller\Admin\UsersController::beforeFilter() must be an instance of App\Controller\Admin\Event, instance of Cake\Event\Event given, called in /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventManager.php on line 414 in /home/diego/projects/public/cakePHP/projectmanager/src/Controller/Admin/UsersController.php on line 14
+Request URL: /admin/users/login
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventManager.php(414): App\Controller\Admin\UsersController->beforeFilter(Object(Cake\Event\Event))
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventManager.php(391): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Controller/Controller.php(502): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(114): Cake\Controller\Controller->startupProcess()
+#5 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Admin\UsersController))
+#6 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home/diego/projects/public/cakePHP/projectmanager/webroot/index.php(37): Cake\Http\Server->run()
+#17 {main}
+
+
+2017-04-08 22:16:26 Warning: Warning (2): Declaration of App\Controller\Admin\UsersController::beforeFilter(App\Controller\Admin\Event $event) should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [/home/diego/projects/public/cakePHP/projectmanager/src/Controller/Admin/UsersController.php, line 11]
+Request URL: /admin/users/add
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+include - APP/Controller/Admin/UsersController.php, line 11
+Composer\Autoload\includeFile - ROOT/vendor/composer/ClassLoader.php, line 412
+Composer\Autoload\ClassLoader::loadClass() - ROOT/vendor/composer/ClassLoader.php, line 301
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+Cake\Core\App::_classExistsInBase() - CORE/src/Core/App.php, line 152
+Cake\Core\App::className() - CORE/src/Core/App.php, line 64
+Cake\Http\ControllerFactory::create() - CORE/src/Http/ControllerFactory.php, line 68
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 90
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 78
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 59
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 92
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 80
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-04-08 22:16:26 Error: [TypeError] Argument 1 passed to App\Controller\Admin\UsersController::beforeFilter() must be an instance of App\Controller\Admin\Event, instance of Cake\Event\Event given, called in /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventManager.php on line 414 in /home/diego/projects/public/cakePHP/projectmanager/src/Controller/Admin/UsersController.php on line 14
+Request URL: /admin/users/add
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventManager.php(414): App\Controller\Admin\UsersController->beforeFilter(Object(Cake\Event\Event))
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventManager.php(391): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Controller/Controller.php(502): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(114): Cake\Controller\Controller->startupProcess()
+#5 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Admin\UsersController))
+#6 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home/diego/projects/public/cakePHP/projectmanager/webroot/index.php(37): Cake\Http\Server->run()
+#17 {main}
+
+
+2017-04-08 22:17:14 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::ad() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'ad',
+  'prefix' => 'admin',
+  'plugin' => false,
+)
+Request URL: /admin/users/ad
+Stack Trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Admin\UsersController))
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/diego/projects/public/cakePHP/projectmanager/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-04-08 22:17:24 Error: Fatal Error (1): Uncaught Error: Call to a member function allow() on boolean in /home/diego/projects/public/cakePHP/projectmanager/src/Controller/AppController.php:87
+Stack trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/src/Controller/ErrorController.php(54): App\Controller\AppController->beforeRender(Object(Cake\Event\Event))
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventManager.php(414): App\Controller\ErrorController->beforeRender(Object(Cake\Event\Event))
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventManager.php(391): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Controller/Controller.php(610): Cake\Controller\Controller->dispatchEvent('C in [/home/diego/projects/public/cakePHP/projectmanager/src/Controller/AppController.php, line 87]
+Request URL: /users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 104
+[main] - [internal], line ??
+
+
+
+2017-04-08 22:18:27 Error: Fatal Error (1): Uncaught Error: Call to a member function allow() on boolean in /home/diego/projects/public/cakePHP/projectmanager/src/Controller/AppController.php:85
+Stack trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/src/Controller/ErrorController.php(54): App\Controller\AppController->beforeRender(Object(Cake\Event\Event))
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventManager.php(414): App\Controller\ErrorController->beforeRender(Object(Cake\Event\Event))
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventManager.php(391): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Controller/Controller.php(610): Cake\Controller\Controller->dispatchEvent('C in [/home/diego/projects/public/cakePHP/projectmanager/src/Controller/AppController.php, line 85]
+Request URL: /users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 104
+[main] - [internal], line ??
+
+
+
+2017-04-08 22:27:00 Error: Fatal Error (1): Uncaught Error: Call to a member function allow() on boolean in /home/diego/projects/public/cakePHP/projectmanager/src/Controller/AppController.php:86
+Stack trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/src/Controller/ErrorController.php(54): App\Controller\AppController->beforeRender(Object(Cake\Event\Event))
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventManager.php(414): App\Controller\ErrorController->beforeRender(Object(Cake\Event\Event))
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventManager.php(391): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Controller/Controller.php(610): Cake\Controller\Controller->dispatchEvent('C in [/home/diego/projects/public/cakePHP/projectmanager/src/Controller/AppController.php, line 86]
+Request URL: /users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 104
+[main] - [internal], line ??
+
+
+
+2017-04-08 22:27:24 Error: Fatal Error (1): Uncaught Error: Call to a member function allow() on boolean in /home/diego/projects/public/cakePHP/projectmanager/src/Controller/AppController.php:86
+Stack trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/src/Controller/ErrorController.php(54): App\Controller\AppController->beforeRender(Object(Cake\Event\Event))
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventManager.php(414): App\Controller\ErrorController->beforeRender(Object(Cake\Event\Event))
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventManager.php(391): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Controller/Controller.php(610): Cake\Controller\Controller->dispatchEvent('C in [/home/diego/projects/public/cakePHP/projectmanager/src/Controller/AppController.php, line 86]
+Request URL: /users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 104
+[main] - [internal], line ??
+
+
+
+2017-04-08 22:28:39 Error: Fatal Error (1): Uncaught Error: Call to a member function allow() on boolean in /home/diego/projects/public/cakePHP/projectmanager/src/Controller/AppController.php:86
+Stack trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/src/Controller/ErrorController.php(54): App\Controller\AppController->beforeRender(Object(Cake\Event\Event))
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventManager.php(414): App\Controller\ErrorController->beforeRender(Object(Cake\Event\Event))
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventManager.php(391): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Controller/Controller.php(610): Cake\Controller\Controller->dispatchEvent('C in [/home/diego/projects/public/cakePHP/projectmanager/src/Controller/AppController.php, line 86]
+Request URL: /users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 104
+[main] - [internal], line ??
+
+
+
+2017-04-08 22:29:00 Error: Fatal Error (1): Uncaught Error: Call to a member function allow() on boolean in /home/diego/projects/public/cakePHP/projectmanager/src/Controller/AppController.php:86
+Stack trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/src/Controller/ErrorController.php(54): App\Controller\AppController->beforeRender(Object(Cake\Event\Event))
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventManager.php(414): App\Controller\ErrorController->beforeRender(Object(Cake\Event\Event))
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventManager.php(391): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Controller/Controller.php(610): Cake\Controller\Controller->dispatchEvent('C in [/home/diego/projects/public/cakePHP/projectmanager/src/Controller/AppController.php, line 86]
+Request URL: /users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 104
+[main] - [internal], line ??
+
+
+
+2017-04-08 22:30:34 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Users could not be found.
+Exception Attributes: array (
+  'class' => 'Users',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/diego/projects/public/cakePHP/projectmanager/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-04-08 22:31:52 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Users.username' in 'where clause'
+Request URL: /admin/users/login
+Referer URL: http://localhost/cakePHP/projectmanager/admin/users/login
+Stack Trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(174): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Connection.php(313): Cake\Database\Log\LoggingStatement->execute()
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Query.php(213): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Query.php(1011): Cake\Database\Query->execute()
+#6 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(276): Cake\ORM\Query->_execute()
+#7 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Query.php(959): Cake\ORM\Query->_all()
+#8 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(404): Cake\ORM\Query->all()
+#9 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Auth/BaseAuthenticate.php(107): Cake\ORM\Query->first()
+#10 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Auth/FormAuthenticate.php(78): Cake\Auth\BaseAuthenticate->_findUser('diego', 'senha')
+#11 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Controller/Component/AuthComponent.php(820): Cake\Auth\FormAuthenticate->authenticate(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/diego/projects/public/cakePHP/projectmanager/src/Controller/Admin/UsersController.php(22): Cake\Controller\Component\AuthComponent->identify()
+#13 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\Admin\UsersController->login()
+#14 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#15 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Admin\UsersController))
+#16 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 /home/diego/projects/public/cakePHP/projectmanager/webroot/index.php(37): Cake\Http\Server->run()
+#27 {main}
+
+
+2017-04-08 22:34:42 Error: [PDOException] SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'password' at row 1
+Request URL: /admin/users/add
+Referer URL: http://localhost/cakePHP/projectmanager/admin/users/add
+Stack Trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(174): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Connection.php(313): Cake\Database\Log\LoggingStatement->execute()
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Query.php(213): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Table.php(1916): Cake\Database\Query->execute()
+#6 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Table.php(1810): Cake\ORM\Table->_insert(Object(App\Model\Entity\User), Array)
+#7 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\User), Object(ArrayObject))
+#8 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#9 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#10 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#11 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#12 /home/diego/projects/public/cakePHP/projectmanager/src/Controller/Admin/UsersController.php(75): Cake\ORM\Table->save(Object(App\Model\Entity\User))
+#13 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\Admin\UsersController->add()
+#14 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#15 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Admin\UsersController))
+#16 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 /home/diego/projects/public/cakePHP/projectmanager/webroot/index.php(37): Cake\Http\Server->run()
+#27 {main}
+
+
+2017-04-08 22:35:39 Error: [PDOException] SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'password' at row 1
+Request URL: /admin/users/add
+Referer URL: http://localhost/cakePHP/projectmanager/admin/users/add
+Stack Trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(174): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Connection.php(313): Cake\Database\Log\LoggingStatement->execute()
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Query.php(213): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Table.php(1916): Cake\Database\Query->execute()
+#6 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Table.php(1810): Cake\ORM\Table->_insert(Object(App\Model\Entity\User), Array)
+#7 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\User), Object(ArrayObject))
+#8 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#9 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#10 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#11 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#12 /home/diego/projects/public/cakePHP/projectmanager/src/Controller/Admin/UsersController.php(75): Cake\ORM\Table->save(Object(App\Model\Entity\User))
+#13 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\Admin\UsersController->add()
+#14 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#15 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Admin\UsersController))
+#16 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 /home/diego/projects/public/cakePHP/projectmanager/webroot/index.php(37): Cake\Http\Server->run()
+#27 {main}
+
+
+2017-04-08 22:36:57 Error: [PDOException] SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'password' at row 1
+Request URL: /admin/users/add
+Referer URL: http://localhost/cakePHP/projectmanager/admin/users/add
+Stack Trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(174): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Connection.php(313): Cake\Database\Log\LoggingStatement->execute()
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Query.php(213): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Table.php(1916): Cake\Database\Query->execute()
+#6 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Table.php(1810): Cake\ORM\Table->_insert(Object(App\Model\Entity\User), Array)
+#7 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\User), Object(ArrayObject))
+#8 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#9 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#10 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#11 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#12 /home/diego/projects/public/cakePHP/projectmanager/src/Controller/Admin/UsersController.php(76): Cake\ORM\Table->save(Object(App\Model\Entity\User))
+#13 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\Admin\UsersController->add()
+#14 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#15 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Admin\UsersController))
+#16 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 /home/diego/projects/public/cakePHP/projectmanager/webroot/index.php(37): Cake\Http\Server->run()
+#27 {main}
+
+
+2017-04-08 22:38:29 Error: [InvalidArgumentException] Cannot convert value to bool
+Request URL: /admin/users/add
+Referer URL: http://localhost/cakePHP/projectmanager/admin/users/add
+Stack Trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/TypeConverterTrait.php(37): Cake\Database\Type\BoolType->toDatabase(2, Object(Cake\Database\Driver\Mysql))
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Statement/PDOStatement.php(69): Cake\Database\Statement\StatementDecorator->cast(2, Object(Cake\Database\Type\BoolType))
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(107): Cake\Database\Statement\PDOStatement->bindValue('c4', 2, 'boolean')
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php(98): Cake\Database\Statement\StatementDecorator->bindValue('c4', 2, 'boolean')
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/ValueBinder.php(147): Cake\Database\Log\LoggingStatement->bindValue('c4', 2, 'boolean')
+#5 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Connection.php(312): Cake\Database\ValueBinder->attachTo(Object(Cake\Database\Log\LoggingStatement))
+#6 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Query.php(213): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Table.php(1916): Cake\Database\Query->execute()
+#8 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Table.php(1810): Cake\ORM\Table->_insert(Object(App\Model\Entity\User), Array)
+#9 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\User), Object(ArrayObject))
+#10 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#11 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#12 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#13 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#14 /home/diego/projects/public/cakePHP/projectmanager/src/Controller/Admin/UsersController.php(77): Cake\ORM\Table->save(Object(App\Model\Entity\User))
+#15 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\Admin\UsersController->add()
+#16 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#17 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Admin\UsersController))
+#18 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 /home/diego/projects/public/cakePHP/projectmanager/webroot/index.php(37): Cake\Http\Server->run()
+#29 {main}
+
+
+2017-04-08 22:39:23 Error: [PDOException] SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'password' at row 1
+Request URL: /admin/users/add
+Referer URL: http://localhost/cakePHP/projectmanager/admin/users/add
+Stack Trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(174): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Connection.php(313): Cake\Database\Log\LoggingStatement->execute()
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Query.php(213): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Table.php(1916): Cake\Database\Query->execute()
+#6 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Table.php(1810): Cake\ORM\Table->_insert(Object(App\Model\Entity\User), Array)
+#7 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\User), Object(ArrayObject))
+#8 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#9 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#10 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#11 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#12 /home/diego/projects/public/cakePHP/projectmanager/src/Controller/Admin/UsersController.php(77): Cake\ORM\Table->save(Object(App\Model\Entity\User))
+#13 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\Admin\UsersController->add()
+#14 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#15 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Admin\UsersController))
+#16 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 /home/diego/projects/public/cakePHP/projectmanager/webroot/index.php(37): Cake\Http\Server->run()
+#27 {main}
+
+
+2017-04-08 22:42:52 Error: [ParseError] syntax error, unexpected '$this' (T_VARIABLE) in /home/diego/projects/public/cakePHP/projectmanager/src/Controller/Admin/UsersController.php on line 28
+Request URL: /admin/users/login?redirect=%2Fadmin%2Fusers
+Referer URL: http://localhost/cakePHP/projectmanager/admin/users/login?redirect=%2Fadmin%2Fusers
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/home/diego/pro...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 [internal function]: spl_autoload_call('App\\Controller\\...')
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Core/App.php(152): class_exists('App\\Controller\\...')
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Core/App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Adm...', 'App')
+#5 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(68): Cake\Core\App::className('Users', 'Controller/Admi...', 'Controller')
+#6 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/diego/projects/public/cakePHP/projectmanager/webroot/index.php(37): Cake\Http\Server->run()
+#18 {main}
+
+
+2017-04-08 22:44:36 Warning: Warning (512): Unable to emit headers. Headers sent in file=/home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Debugger.php line=921 in [/home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /admin/users/login?redirect=%2Fadmin%2Fusers
+Referer URL: http://localhost/cakePHP/projectmanager/admin/users/login?redirect=%2Fadmin%2Fusers
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-04-08 22:44:36 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Debugger.php:921) in [/home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /admin/users/login?redirect=%2Fadmin%2Fusers
+Referer URL: http://localhost/cakePHP/projectmanager/admin/users/login?redirect=%2Fadmin%2Fusers
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-04-08 22:44:36 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Debugger.php:921) in [/home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 178]
+Request URL: /admin/users/login?redirect=%2Fadmin%2Fusers
+Referer URL: http://localhost/cakePHP/projectmanager/admin/users/login?redirect=%2Fadmin%2Fusers
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 178
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-04-08 22:44:36 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Debugger.php:921) in [/home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 178]
+Request URL: /admin/users/login?redirect=%2Fadmin%2Fusers
+Referer URL: http://localhost/cakePHP/projectmanager/admin/users/login?redirect=%2Fadmin%2Fusers
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 178
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-04-08 22:46:10 Warning: Warning (512): Unable to emit headers. Headers sent in file=/home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Debugger.php line=921 in [/home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /admin/users/login?redirect=%2Fadmin%2Fusers
+Referer URL: http://localhost/cakePHP/projectmanager/admin/users/login?redirect=%2Fadmin%2Fusers
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-04-08 22:46:10 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Debugger.php:921) in [/home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /admin/users/login?redirect=%2Fadmin%2Fusers
+Referer URL: http://localhost/cakePHP/projectmanager/admin/users/login?redirect=%2Fadmin%2Fusers
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-04-08 22:46:10 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Debugger.php:921) in [/home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 178]
+Request URL: /admin/users/login?redirect=%2Fadmin%2Fusers
+Referer URL: http://localhost/cakePHP/projectmanager/admin/users/login?redirect=%2Fadmin%2Fusers
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 178
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-04-08 22:46:10 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Debugger.php:921) in [/home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 178]
+Request URL: /admin/users/login?redirect=%2Fadmin%2Fusers
+Referer URL: http://localhost/cakePHP/projectmanager/admin/users/login?redirect=%2Fadmin%2Fusers
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 178
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-04-08 22:47:54 Warning: Warning (512): Unable to emit headers. Headers sent in file=/home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Debugger.php line=921 in [/home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /admin/users/login
+Referer URL: http://localhost/cakePHP/projectmanager/admin/users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-04-08 22:47:54 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Debugger.php:921) in [/home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /admin/users/login
+Referer URL: http://localhost/cakePHP/projectmanager/admin/users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-04-08 22:47:54 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Debugger.php:921) in [/home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 178]
+Request URL: /admin/users/login
+Referer URL: http://localhost/cakePHP/projectmanager/admin/users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 178
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-04-08 22:47:54 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Debugger.php:921) in [/home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 178]
+Request URL: /admin/users/login
+Referer URL: http://localhost/cakePHP/projectmanager/admin/users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 178
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2017-04-08 22:48:21 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Users.login' in 'where clause'
+Request URL: /admin/users/add
+Referer URL: http://localhost/cakePHP/projectmanager/admin/users/add
+Stack Trace:
+#0 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(174): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Connection.php(313): Cake\Database\Log\LoggingStatement->execute()
+#4 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Query.php(213): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Query.php(1011): Cake\Database\Query->execute()
+#6 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(276): Cake\ORM\Query->_execute()
+#7 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Query.php(959): Cake\ORM\Query->_all()
+#8 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(293): Cake\ORM\Query->all()
+#9 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Table.php(1612): Cake\ORM\Query->toArray()
+#10 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Rule/IsUnique.php(82): Cake\ORM\Table->exists(Array)
+#11 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Datasource/RuleInvoker.php(115): Cake\ORM\Rule\IsUnique->__invoke(Object(App\Model\Entity\User), Array)
+#12 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(298): Cake\Datasource\RuleInvoker->__invoke(Object(App\Model\Entity\User), Array)
+#13 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(255): Cake\Datasource\RulesChecker->_checkRules(Object(App\Model\Entity\User), Array, Array)
+#14 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Datasource/RulesChecker.php(231): Cake\Datasource\RulesChecker->checkCreate(Object(App\Model\Entity\User), Array)
+#15 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Datasource/RulesAwareTrait.php(66): Cake\Datasource\RulesChecker->check(Object(App\Model\Entity\User), 'create', Array)
+#16 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Table.php(1784): Cake\ORM\Table->checkRules(Object(App\Model\Entity\User), 'create', Object(ArrayObject))
+#17 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Table.php(1723): Cake\ORM\Table->_processSave(Object(App\Model\Entity\User), Object(ArrayObject))
+#18 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#19 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Database/Connection.php(680): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#20 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#21 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/ORM/Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#22 /home/diego/projects/public/cakePHP/projectmanager/src/Controller/Admin/UsersController.php(77): Cake\ORM\Table->save(Object(App\Model\Entity\User))
+#23 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\Admin\UsersController->add()
+#24 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#25 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Admin\UsersController))
+#26 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 /home/diego/projects/public/cakePHP/projectmanager/vendor/cakephp/cakephp/src/Http/Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#36 /home/diego/projects/public/cakePHP/projectmanager/webroot/index.php(37): Cake\Http\Server->run()
+#37 {main}
+
+
